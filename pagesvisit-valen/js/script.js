@@ -8,7 +8,7 @@ const guardarContador = (contador) => localStorage.setItem('visitas', contador);
 
 
 const actualizarContador = () => {
-    span.textContent = contadorVisitas;
+    visitas.textContent = visitas;
 }
 
 visitas++;
@@ -23,7 +23,7 @@ button.addEventListener('click', () => {
 const contadorVisitas = document.getElementById("contadorVisitas")
 const btnReestablecer = document.getElementById("btnReestablecer")
 let contador = localStorage.getItem("contador") || 0
-    // let contador = localStorage.getItem("contador")? localStorage.getItem("contador") : 1
+//let contador = localStorage.getItem("contador")? localStorage.getItem("contador") : 1
 contador++
 localStorage.setItem("contador", contador)
 contadorVisitas.innerHTML = contador
